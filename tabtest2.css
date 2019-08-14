@@ -1,0 +1,40 @@
+.tab_item {
+    display: none;
+  }
+  
+  .is-active-item {
+    display: block;
+  }
+
+  .navs{
+    border-bottom: 1px solid #dee2e6;
+      display: table;
+       white-space: nowrap;
+  }
+
+  .tabscontainer{
+      overflow-x: auto;
+  }
+
+  .tab_btn {
+    background-color: #E0F2F7;
+    border: solid 1px  #dee2e6;;
+    border-radius: 5px 5px 0 0;
+    color: #007bff; 
+    display: inline-block; /* ボタンを横並びに */
+    font-size: 20px;
+    margin: 0 2px;
+    padding: 3px 5px;
+    text-decoration: none;
+  }
+  
+  .tab_btn:hover{
+    text-decoration: none;
+  }
+
+  .is-active-btn {
+    border-bottom: transparent;
+    color: inherit;
+  }
+  
+  

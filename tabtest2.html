@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" text="text/css" href="tabtest2.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
+
+    <header>
+        <!-- ヘッダ部-->
+
+    </header>
+    <p class="font-weight-bold text-left">管理画面</p>
+
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sampleModal">
+        モーダル・ダイアログ 呼び出し
+    </button>
+    <div class="modal fade" id="sampleModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- タブ部分 -->
+
+                    <div class="container containers">
+                        <div class="tabscontainer">
+                            <div class="navs">
+                                <a class="tab_btn" href="#item1">開発言語</a>
+                                <a class="tab_btn" href="#item2">開発環境</a>
+                                <a class="tab_btn" href="#item3">その他</a>
+                                <a class="tab_btn" href="#item4">タブ4</a>
+                                <a class="tab_btn" href="#item5">タブ5</a>
+                                <a class="tab_btn" href="#item6">タブ63333</a>
+                                <a class="tab_btn" href="#item7">タブ777777</a>
+                                <a class="tab_btn" href="#item8">タブ88888</a>
+
+                            </div>
+                        </div>
+                        <input type="range" class="custom-range" min="0" max="7">
+                        <!-- タブのコンテンツ部分 -->
+                        <div class="tab_item is-active-item" id="item1">
+                            <div class="panel panel-default">
+                                <div class="panel-body">基本パネル例</div>
+                            </div>
+                            
+                        </div>
+                        <div class="tab_item" id="item2">2番目のコンテンツ</div>
+                        <div class="tab_item" id="item3">3番目のコンテンツ</div>
+                        <div class="tab_item" id="item4">4番目のコンテンツ</div>
+                        <div class="tab_item" id="item5">5番目のコンテンツ</div>
+                        <div class="tab_item" id="item6">6番目のコンテンツ</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        $(function () {
+            /*tabクリック*/
+            $('.tab_btn').on('click', function () {
+                $('.tab_item').removeClass("is-active-item");
+                $('.tab_btn').removeClass("is-active-btn");
+
+                $($(this).attr("href")).addClass("is-active-item");
+                $(this).addClass("is-active-btn");
+
+            console.log($('.tabscontainer').scrollTop());
+
+            });
+
+        });
+
+    </script>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="../js/jquery-3.4.1.slim.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/jquery.mousewheel.js"></script>
+
+<!--CSS -->
+  <title>Test on</title>
+</head>
+
+<body>
+<label id="text"></label>
+
+<script>
+ var input = document.getElementById("text");
+ var ary = ['JavaScript', 'Ajax', 'ASP.NET'];
+ input.innerHTML= ary[0];
+
+
+ let book= {title: 'Java' , publish: '技術評論社', price: 2680, 
+other:{key: 'Java SE 8', logo: 'logo.jpg'}};
+let {title, other: box, other:{key: kekey}} =book;//kekeyにother.keyが格納 
+console.log(typeof title);
+console.log(typeof box);
+console.log(typeof kekey);
+console.log(typeof key);
+console.log(book.other.key);
+let stringmember =indexOf()
+
+</script>
+</body>
